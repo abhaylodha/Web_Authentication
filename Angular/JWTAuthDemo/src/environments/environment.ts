@@ -7,7 +7,9 @@ export const environment = {
   user : 'user',
   password : 'password',
   helloURL : 'http://localhost:8080/hello',
-  helloBeanURL : 'http://localhost:8080/hellobean'
+  helloBeanURL : 'http://localhost:8080/hellobean',
+  loginURL : 'http://localhost:8080/authenticate?key=',
+  signUpURL : 'http://localhost:8080/register?key='
 };
 
 /*

@@ -1,7 +1,7 @@
 package com.ak.jwt_auth_demo.jwt.resource;
-public class AuthenticationException extends RuntimeException {
-    public AuthenticationException(String message, Throwable cause) {
-        super(message, cause);
-    }
-}
 
+public class AuthenticationException extends RuntimeException {
+	public AuthenticationException(String message, Throwable cause) {
+		super(message, cause);
+	}
+}

@@ -6,11 +6,26 @@ public class JwtTokenRequest implements Serializable {
 
 	private static final long serialVersionUID = -5616176897013108345L;
 
-	private String username;
+	private String email;
 	private String password;
+	private Boolean returnSecureToken;
 
-//	"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbjI4bWludXRlcyIsImV4cCI6MTU4ODQ0NjkwNiwiaWF0IjoxNTg3ODQyMTA2fQ.bdBVQHJzOl_JRlykaJvzuLVChx3eN6X63JtlfAY1dIyh2Bsa1D7RaiUhc2GM7IPMlfP5tHvNqsZV1b6mJb0Xtg"
-		
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Boolean getReturnSecureToken() {
+		return returnSecureToken;
+	}
+
+	public void setReturnSecureToken(Boolean returnSecureToken) {
+		this.returnSecureToken = returnSecureToken;
+	}
+
 	public JwtTokenRequest() {
 		super();
 	}
@@ -21,11 +36,11 @@ public class JwtTokenRequest implements Serializable {
 	}
 
 	public String getUsername() {
-		return this.username;
+		return this.email;
 	}
 
 	public void setUsername(String username) {
-		this.username = username;
+		this.email = username;
 	}
 
 	public String getPassword() {
